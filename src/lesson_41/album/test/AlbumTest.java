@@ -80,6 +80,7 @@ class AlbumTest {
 
     @Test
     void getPhotoBetweenDate() {
+        LocalDate LocalDate;
         LocalDate ld = LocalDate;
         Photo [] actual = album.getPhotoBetweenDate(ld.minusDays(5),ld.minusDays(2));
         Photo [] expected = {ph[2],ph[5],ph[4]};
